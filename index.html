@@ -16,7 +16,20 @@
   }).appendTo( "body" );
 });
 
+	var newdata = {"river":[{"name":"Krishna","state":"Maharashtra","district":"Pune"},{"name":"Indrayani","state":"Maharashtra","district":"Pune"}]}
+var params = JSON.stringify(newdata);
 
+$.ajax({
+    type: 'POST',
+    data: params,
+    url: 'filewriter.php',
+    success: function(data){
+        // do something on success
+    },
+    error: function(){
+        // do something on error
+    }
+});
 </script>
 
 </head>

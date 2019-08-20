@@ -3,6 +3,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>	
 <script>
 	$.getJSON( "rbdata.json", function( data ) {
+		alert(data);
+		alert(JSON.stringify(data));
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );

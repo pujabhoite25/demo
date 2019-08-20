@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>	
+<script>
+	$.getJSON( "https://github.com/pujabhoite25/Riverbook/blob/master/data/river.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});
+
+
+</script>
+
+</head>
+<body>
+<div class="container1">
+<div class="link"> <a href="https://www.google.com">this</a></div>
+<div class="image">
+</div>
+</div>
+</body>
+</html>

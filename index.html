@@ -22,12 +22,12 @@ var params = JSON.stringify(newdata);
 $.ajax({
     type: 'POST',
     data: params,
-    url: 'filewriter.php',
+    url: 'fileWriter.php',
     success: function(data){
-        // do something on success
+        alert("yes");
     },
     error: function(){
-        // do something on error
+        alert("no");
     }
 });
 </script>
